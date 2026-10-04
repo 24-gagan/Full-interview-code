@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-09-20T15:49:17.357169" rpa="false" schemaversion="5">
+<suite id="s1" name="Today" source="C:\Users\gagan\PycharmProjects\PythonProject\Robot_practice\Today.robot">
+<test id="s1-t1" name="TC 1 Print The Statement" line="11">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.404181" level="INFO">This is the message</msg>
+<arg>This is the message</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.403633" elapsed="0.000779"/>
+</kw>
+<status status="PASS" start="2026-09-20T15:49:17.402595" elapsed="0.002140"/>
+</test>
+<test id="s1-t2" name="TC 2 Printing Variables" line="14">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.406273" level="INFO">Scalar number 100</msg>
+<arg>Scalar number ${num1}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.405783" elapsed="0.000689"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.407161" level="INFO">String python</msg>
+<arg>String ${strg}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.406757" elapsed="0.000575"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.408021" level="INFO">List ['python', 'java', 'oops', 'pytest']</msg>
+<arg>List ${list_var}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.407614" elapsed="0.000592"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.408845" level="INFO">Dictionary {'name': 'python', 'class_no': '23', 'oops': 'True'}</msg>
+<arg>Dictionary ${dict_var}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.408450" elapsed="0.000574"/>
+</kw>
+<status status="PASS" start="2026-09-20T15:49:17.405290" elapsed="0.004016"/>
+</test>
+<test id="s1-t3" name="TC 3 Accessing List" line="20">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-09-20T15:49:17.411928" level="INFO">List first element python</msg>
+<arg>List first element ${list_var}[0]</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.410758" elapsed="0.001377"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.412871" elapsed="0.000427"/>
+</kw>
+<var name="${var}">python</var>
+<status status="PASS" start="2026-09-20T15:49:17.412748" elapsed="0.000615"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.413562" elapsed="0.000365"/>
+</kw>
+<var name="${var}">java</var>
+<status status="PASS" start="2026-09-20T15:49:17.413481" elapsed="0.000492"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.414131" elapsed="0.000357"/>
+</kw>
+<var name="${var}">oops</var>
+<status status="PASS" start="2026-09-20T15:49:17.414063" elapsed="0.000479"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-20T15:49:17.414722" elapsed="0.000303"/>
+</kw>
+<var name="${var}">pytest</var>
+<status status="PASS" start="2026-09-20T15:49:17.414643" elapsed="0.000431"/>
+</iter>
+<var>${var}</var>
+<value>@{list_var}</value>
+<status status="PASS" start="2026-09-20T15:49:17.412371" elapsed="0.002730"/>
+</for>
+<status status="PASS" start="2026-09-20T15:49:17.410074" elapsed="0.005199"/>
+</test>
+<status status="PASS" start="2026-09-20T15:49:17.358444" elapsed="0.057500"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Today" id="s1" pass="3" fail="0" skip="0">Today</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

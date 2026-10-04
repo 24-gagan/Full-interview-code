@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-19T15:31:12.895203" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="C:\Users\gagan\PycharmProjects\PythonProject\Cognizent\practice.robot">
+<test id="s1-t1" name="For loop" line="11">
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${num}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-19T15:31:12.927456" elapsed="0.000453"/>
+</kw>
+<var name="${num}">10</var>
+<status status="PASS" start="2026-03-19T15:31:12.927119" elapsed="0.000879"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${num}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-19T15:31:12.928348" elapsed="0.000414"/>
+</kw>
+<var name="${num}">20</var>
+<status status="PASS" start="2026-03-19T15:31:12.928261" elapsed="0.000531"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${num}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-19T15:31:12.928897" elapsed="0.000241"/>
+</kw>
+<var name="${num}">30</var>
+<status status="PASS" start="2026-03-19T15:31:12.928849" elapsed="0.000321"/>
+</iter>
+<var>${num}</var>
+<value>@{list}</value>
+<status status="PASS" start="2026-03-19T15:31:12.926897" elapsed="0.002292"/>
+</for>
+<status status="PASS" start="2026-03-19T15:31:12.926585" elapsed="0.002779"/>
+</test>
+<status status="PASS" start="2026-03-19T15:31:12.896294" elapsed="0.033589"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Practice" id="s1" pass="1" fail="0" skip="0">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

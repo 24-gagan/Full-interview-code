@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-14T13:55:52.165351" rpa="false" schemaversion="5">
+<suite id="s1" name="MyFirstTS" source="C:\Users\gagan\PycharmProjects\PythonProject\robot_framework_fita\MyFirstTS.robot">
+<test id="s1-t1" name="TC1 Print the statement" line="13">
+<kw name="Set Log Level" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.193918" level="DEBUG">Log level changed from INFO to TRACE.</msg>
+<msg time="2026-03-14T13:55:52.193957" level="TRACE">Return: 'INFO'</msg>
+<arg>TRACE</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.193630" elapsed="0.000364"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.195024" level="TRACE">Arguments: [ 'This is the message' | console=True | level='TRACE' ]</msg>
+<msg time="2026-03-14T13:55:52.195090" level="TRACE">This is the message</msg>
+<msg time="2026-03-14T13:55:52.195358" level="TRACE">Return: None</msg>
+<arg>This is the message</arg>
+<arg>console=True</arg>
+<arg>level=TRACE</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.194809" elapsed="0.000597"/>
+</kw>
+<status status="PASS" start="2026-03-14T13:55:52.192961" elapsed="0.002984"/>
+</test>
+<test id="s1-t2" name="TC2 Printing variables" line="17">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.197298" level="TRACE">Arguments: [ 'Scalar number 100' | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.197348" level="INFO">Scalar number 100</msg>
+<msg time="2026-03-14T13:55:52.197415" level="TRACE">Return: None</msg>
+<arg>Scalar number ${num1}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.197105" elapsed="0.000336"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.197850" level="TRACE">Arguments: [ 'Scalar string python' | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.197888" level="INFO">Scalar string python</msg>
+<msg time="2026-03-14T13:55:52.197977" level="TRACE">Return: None</msg>
+<arg>Scalar string ${strg}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.197693" elapsed="0.000305"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.198456" level="TRACE">Arguments: [ "List ['python', 'java', 'oops', 'pytest']" | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.198497" level="INFO">List ['python', 'java', 'oops', 'pytest']</msg>
+<msg time="2026-03-14T13:55:52.198546" level="TRACE">Return: None</msg>
+<arg>List @{list_var}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.198306" elapsed="0.000261"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.199020" level="TRACE">Arguments: [ "Dictionary {'name': 'python', 'class_no': '23', 'oops': 'True'}" | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.199057" level="INFO">Dictionary {'name': 'python', 'class_no': '23', 'oops': 'True'}</msg>
+<msg time="2026-03-14T13:55:52.199151" level="TRACE">Return: None</msg>
+<arg>Dictionary ${dict_var}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.198876" elapsed="0.000298"/>
+</kw>
+<status status="PASS" start="2026-03-14T13:55:52.196895" elapsed="0.002581"/>
+</test>
+<test id="s1-t3" name="TC3 accessing list" line="23">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.200415" level="TRACE">Arguments: [ 'List first element python' | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.200466" level="INFO">List first element python</msg>
+<msg time="2026-03-14T13:55:52.200568" level="TRACE">Return: None</msg>
+<arg>List first element ${list_var}[0]</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.200205" elapsed="0.000385"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.201306" level="TRACE">Arguments: [ 'python' ]</msg>
+<msg time="2026-03-14T13:55:52.201436" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.201126" elapsed="0.000353"/>
+</kw>
+<var name="${var}">python</var>
+<status status="PASS" start="2026-03-14T13:55:52.201007" elapsed="0.000500"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.201799" level="TRACE">Arguments: [ 'java' ]</msg>
+<msg time="2026-03-14T13:55:52.201967" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.201651" elapsed="0.000348"/>
+</kw>
+<var name="${var}">java</var>
+<status status="PASS" start="2026-03-14T13:55:52.201595" elapsed="0.000429"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.202278" level="TRACE">Arguments: [ 'oops' ]</msg>
+<msg time="2026-03-14T13:55:52.202372" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.202146" elapsed="0.000256"/>
+</kw>
+<var name="${var}">oops</var>
+<status status="PASS" start="2026-03-14T13:55:52.202090" elapsed="0.000338"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.202665" level="TRACE">Arguments: [ 'pytest' ]</msg>
+<msg time="2026-03-14T13:55:52.202754" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.202534" elapsed="0.000250"/>
+</kw>
+<var name="${var}">pytest</var>
+<status status="PASS" start="2026-03-14T13:55:52.202487" elapsed="0.000321"/>
+</iter>
+<var>${var}</var>
+<value>@{list_var}</value>
+<status status="PASS" start="2026-03-14T13:55:52.200713" elapsed="0.002116"/>
+</for>
+<status status="PASS" start="2026-03-14T13:55:52.199988" elapsed="0.003352"/>
+</test>
+<test id="s1-t4" name="TC3 accessing dictionary" line="29">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.205212" level="TRACE">Arguments: [ 'dict element python' | console=True ]</msg>
+<msg time="2026-03-14T13:55:52.205287" level="INFO">dict element python</msg>
+<msg time="2026-03-14T13:55:52.205378" level="TRACE">Return: None</msg>
+<arg>dict element ${dict_var['name']}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.204475" elapsed="0.000930"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.205873" level="TRACE">Arguments: [ ('name', 'python') ]</msg>
+<msg time="2026-03-14T13:55:52.206005" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.205728" elapsed="0.000303"/>
+</kw>
+<var name="${var}">('name', 'python')</var>
+<status status="PASS" start="2026-03-14T13:55:52.205673" elapsed="0.000382"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.206278" level="TRACE">Arguments: [ ('class_no', '23') ]</msg>
+<msg time="2026-03-14T13:55:52.206391" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.206163" elapsed="0.000252"/>
+</kw>
+<var name="${var}">('class_no', '23')</var>
+<status status="PASS" start="2026-03-14T13:55:52.206115" elapsed="0.000322"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2026-03-14T13:55:52.206859" level="TRACE">Arguments: [ ('oops', 'True') ]</msg>
+<msg time="2026-03-14T13:55:52.206986" level="TRACE">Return: None</msg>
+<arg>${var}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T13:55:52.206531" elapsed="0.000603"/>
+</kw>
+<var name="${var}">('oops', 'True')</var>
+<status status="PASS" start="2026-03-14T13:55:52.206488" elapsed="0.000674"/>
+</iter>
+<var>${var}</var>
+<value>&amp;{dict_var}</value>
+<status status="PASS" start="2026-03-14T13:55:52.205541" elapsed="0.001641"/>
+</for>
+<status status="PASS" start="2026-03-14T13:55:52.203963" elapsed="0.003379"/>
+</test>
+<status status="PASS" start="2026-03-14T13:55:52.166391" elapsed="0.041350"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="MyFirstTS" id="s1" pass="4" fail="0" skip="0">MyFirstTS</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

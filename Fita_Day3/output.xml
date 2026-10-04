@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.3 on linux)" generated="2026-03-14T10:56:45.472655" rpa="false" schemaversion="5">
+<suite id="s1" name="Import Python Keywords" source="/home/shirly/PycharmProjects/PythonProject_gagandeep/robot_framework/import_python_keywords.robot">
+<test id="s1-t1" name="TC1: Call rf python library- fucntion" line="17">
+<kw name="Add Two Numbers" owner="rf_function">
+<msg time="2026-03-14T10:56:45.525075" level="INFO">${added_val} = 1020</msg>
+<var>${added_val}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2026-03-14T10:56:45.524830" elapsed="0.000303"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${added_val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T10:56:45.525436" elapsed="0.000667"/>
+</kw>
+<status status="PASS" start="2026-03-14T10:56:45.523667" elapsed="0.002714"/>
+</test>
+<test id="s1-t2" name="TC2: Call rf python library - class" line="21">
+<kw name="Add" owner="calc">
+<msg time="2026-03-14T10:56:45.528006" level="INFO">${added_val} = 30</msg>
+<var>${added_val}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2026-03-14T10:56:45.527616" elapsed="0.000466"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${added_val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T10:56:45.528404" elapsed="0.000785"/>
+</kw>
+<status status="PASS" start="2026-03-14T10:56:45.526890" elapsed="0.002728"/>
+</test>
+<test id="s1-t3" name="TC3: Call rf python library- fucntion" line="25">
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2026-03-14T10:56:45.531685" level="INFO">${n1} = 10</msg>
+<var>${n1}</var>
+<arg>10</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2026-03-14T10:56:45.530924" elapsed="0.000836"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<msg time="2026-03-14T10:56:45.532777" level="INFO">${n2} = 20</msg>
+<var>${n2}</var>
+<arg>20</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="PASS" start="2026-03-14T10:56:45.532102" elapsed="0.000744"/>
+</kw>
+<kw name="Add Two Numbers" owner="rf_function">
+<msg time="2026-03-14T10:56:45.533619" level="INFO">${added_val} = 30</msg>
+<var>${added_val}</var>
+<arg>${n1}</arg>
+<arg>${n2}</arg>
+<status status="PASS" start="2026-03-14T10:56:45.533144" elapsed="0.000540"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${added_val}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-14T10:56:45.533991" elapsed="0.000707"/>
+</kw>
+<status status="PASS" start="2026-03-14T10:56:45.530164" elapsed="0.004881"/>
+</test>
+<status status="PASS" start="2026-03-14T10:56:45.473866" elapsed="0.062006"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Import Python Keywords" id="s1" pass="3" fail="0" skip="0">Import Python Keywords</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-03-14T10:56:45.518400" level="WARN">Error in file '/home/shirly/PycharmProjects/PythonProject_gagandeep/robot_framework/resources.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2026-03-14T10:56:45.518689" level="WARN">Error in file '/home/shirly/PycharmProjects/PythonProject_gagandeep/robot_framework/resources.robot' on line 21: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

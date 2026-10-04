@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-10-01T13:18:44.172053" rpa="false" schemaversion="5">
+<suite id="s1" name="Api2" source="C:\Users\gagan\PycharmProjects\PythonProject\API\api2.robot">
+<test id="s1-t1" name="Validate User Name" line="5">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-10-01T13:18:44.366969" level="INFO">Creating Session using : alias=api, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>https://jsonplaceholder.typicode.com</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-10-01T13:18:44.366738" elapsed="0.000589"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-10-01T13:18:44.596573" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users/1 
+ path_url=/users/1 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-10-01T13:18:44.596892" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users/1 
+ status=200, reason=OK 
+ headers={'Date': 'Thu, 01 Oct 2026 07:48:44 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'access-control-allow-credentials': 'true', 'Cache-Control': 'max-age=43200', 'etag': 'W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"', 'expires': '-1', 'pragma': 'no-cache', 'vary': 'Origin, Accept-Encoding', 'x-content-type-options': 'nosniff', 'x-powered-by': 'Express', 'x-ratelimit-limit': '3600000', 'x-ratelimit-remaining': '3599998', 'x-ratelimit-reset': '1790812826', 'Age': '2724', 'Report-To': '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2BYqe1WwqygYokwq0hEhO4qxFwVt0bYDqQ6%2BPe%2BE4yNZ4Y3gBtNKjNSlnkuLlchsjA63VnVX4rwUUERqSS8rkXJT1slqkaJObNEX7Kv%2BVyQV8xrrPFx8e6sRJvZgQ1QDSaKM2u5fFg5TrfioKR3TN"}]}', 'cf-cache-status': 'HIT', 'Nel': '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}', 'Content-Encoding': 'gzip', 'Server': 'cloudflare', 'CF-RAY': 'a439dde26fbd52ea-SIN', 'alt-svc': 'h3=":443"; ma=86400'} 
+ body={
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+} 
+ </msg>
+<msg time="2026-10-01T13:18:44.597049" level="INFO">C:\Users\gagan\PycharmProjects\PythonProject\.venv\Lib\site-packages\urllib3\connectionpool.py:1097: InsecureRequestWarning: Unverified HTTPS request is being made to host 'jsonplaceholder.typicode.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
+  warnings.warn(</msg>
+<msg time="2026-10-01T13:18:44.597711" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/users/1</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-10-01T13:18:44.367702" elapsed="0.230097"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-10-01T13:18:44.599440" level="INFO">${json} = {'id': 1, 'name': 'Leanne Graham', 'username': 'Bret', 'email': 'Sincere@april.biz', 'address': {'street': 'Kulas Light', 'suite': 'Apt. 556', 'city': 'Gwenborough', 'zipcode': '92998-3874', 'geo': {'...</msg>
+<var>${json}</var>
+<arg>$response.json()</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-10-01T13:18:44.598397" elapsed="0.001102"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${json["name"]}</arg>
+<arg>Leanne Graham</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2026-10-01T13:18:44.600007" elapsed="0.001312"/>
+</kw>
+<status status="PASS" start="2026-10-01T13:18:44.365555" elapsed="0.236366"/>
+</test>
+<status status="PASS" start="2026-10-01T13:18:44.175683" elapsed="0.427496"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Api2" id="s1" pass="1" fail="0" skip="0">Api2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

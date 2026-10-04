@@ -1,0 +1,33 @@
+#pytest -- testing framework of python--->build on top of unittest framework
+
+#pip install pytest
+
+#Naming conventions
+file-Test_*/*_Test
+func=test_*
+class/method-Test_<classname>/test_<method>
+py.test
+
+What u have learnt till now
+1.Written test case and run with pytest -v -s
+2.pytest.mark.sanity
+3.pytest -v -s Program
+4.pytest -v -s -m sanity
+skip,skipif,xfail
+###pytest -v -s sanity--->custom
+###predefined marker
+skip---(unconditional),
+skipif----(conditional)
+
+xfail---->(for known product issues)---status: xpass/XFail
+
+####fixture---define setup,teardown
+### pytest - flexible
+
+format
+logging
+set level
+print in stream and file
+handler for running both in stream and console
+
+pip install pytest--html

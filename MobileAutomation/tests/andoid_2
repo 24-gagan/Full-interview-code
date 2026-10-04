@@ -1,0 +1,21 @@
+*** Settings ***
+Library    AppiumLibrary
+
+*** Variables ***
+${REMOTE_URL}    http://127.0.0.1:4723/wd/hub
+${PLATFORM_NAME}    Android
+${DEVICE_NAME}    emulator-5554
+${APP_PACKAGE}    com.android.settings
+${APP_ACTIVITY}   .Settings
+
+*** Test Cases ***
+Open Settings Application
+    Open Application    ${REMOTE_URL}
+    ...    platformName=${PLATFORM_NAME}
+    ...    deviceName=${DEVICE_NAME}
+    ...    appPackage=${APP_PACKAGE}
+    ...    appActivity=${APP_ACTIVITY}
+
+    Click Element    xpath=//android.widget.TextView[@text="Network & internet"]
+    Sleep    3s
+    Close Application

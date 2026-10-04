@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-03-24T12:43:40.942273" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="C:\Users\gagan\PycharmProjects\PythonProject\Robot_Framework\practice.robot">
+<test id="s1-t1" name="Call Keyword" line="6">
+<kw name="Say Hello">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Hello from Keyword</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-24T12:43:41.011508" elapsed="0.000712"/>
+</kw>
+<status status="PASS" start="2026-03-24T12:43:41.010660" elapsed="0.001800"/>
+</kw>
+<status status="PASS" start="2026-03-24T12:43:41.009347" elapsed="0.003418"/>
+</test>
+<status status="PASS" start="2026-03-24T12:43:40.945200" elapsed="0.068357"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Practice" id="s1" pass="1" fail="0" skip="0">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

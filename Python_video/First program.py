@@ -1,0 +1,8 @@
+# Longest word in a sentence
+s = "python sharpens your coding skills"
+words = s.split()
+longest = words[0]
+for word in words:
+    if len(word) > len(longest):
+        longest = word
+print("Longest word is", longest)

@@ -1,0 +1,7 @@
+x,y=input("enter two values").split()
+print("Number of boys",x)
+print("Number of girls")
+x,y,z=input("enter three values").split()
+print("total number of students",x)
+print("number of boys",y)
+print("Number of girls",z)

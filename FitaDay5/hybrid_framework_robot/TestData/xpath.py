@@ -1,0 +1,6 @@
+id_input_username="id:user-name"
+name_input_password="name:password"
+xpath_button_login="xpath://input[@type='submit']"
+class_text_logo="class:app_logo"
+id_button_menu="id:react-burger-menu-btn"
+id_link_logout="id:logout_sidebar_link"

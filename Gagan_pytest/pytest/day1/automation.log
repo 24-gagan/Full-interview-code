@@ -1,0 +1,5 @@
+13-09-2026 15:18:39 | DEBUG | logging4.py | Debug message
+13-09-2026 15:18:39 | INFO | logging4.py | Browser Opened
+13-09-2026 15:18:39 | WARNING | logging4.py | Warning message
+13-09-2026 15:18:39 | ERROR | logging4.py | Error message
+13-09-2026 15:18:39 | CRITICAL | logging4.py | Critical message

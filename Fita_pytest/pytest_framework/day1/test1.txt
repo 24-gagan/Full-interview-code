@@ -1,0 +1,3 @@
+2026-03-09 20:47:56,622-WARNING-this is warning message,level=logging.DEBUG
+2026-03-09 20:47:56,622-ERROR-this is error message,level=logging.DEBUG
+2026-03-09 20:47:56,623-CRITICAL-this is critical message,level=logging.DEBUG

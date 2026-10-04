@@ -1,0 +1,36 @@
+# pytest -- testing framework of python---> build on top of unittest framework
+
+# pip install pytest
+
+# Naming conventions
+file - Test_*/*_Test
+func - test_*
+class/method - Test_<classname>/test_<menthod>
+
+### pytest -v -s -k Program
+##pytest -v -s -m sanity -->custom
+
+### predefined marker
+skip---(unconditional),
+skipif---(conditional),
+xfail---> (for known product issues)--status: xpass/Xfail
+
+#### fixture -- define setup, teardown
+
+## data driven testing-- parameterise
+
+param in fixture
+param in tc/ts
+
+
+### pytest-- >flex,
+log--->custom logger
+
+how to get report/html log in pytest?
+
+ pip install pytest-html
+
+
+ How to get data xml, json, yaml, excel/csv, txt,ini to python?
+
+

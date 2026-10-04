@@ -1,0 +1,4 @@
+Hello, this is line 1.
+This is line 2.
+Python file handling is easy.
+End of the file.

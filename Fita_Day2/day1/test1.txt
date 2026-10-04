@@ -1,0 +1,5 @@
+2026-03-08 15:50:44,743<-->DEBUG this is debug msg
+2026-03-08 15:50:44,743<-->INFO this is info msg
+2026-03-08 15:50:44,743<-->WARNING this is warning msg
+2026-03-08 15:50:44,743<-->ERROR this is error msg
+2026-03-08 15:50:44,743<-->CRITICAL this is critical msg

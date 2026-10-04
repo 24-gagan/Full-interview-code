@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-09-14T17:16:43.903009" rpa="false" schemaversion="5">
+<suite id="s1" name="1" source="C:\Users\gagan\PycharmProjects\PythonProject\RobotFramework\1.robot">
+<test id="s1-t1" name="Addition of number" line="7">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-09-14T17:16:43.930191" elapsed="0.000290"/>
+</kw>
+<status status="PASS" start="2026-09-14T17:16:43.929624" elapsed="0.001002"/>
+</test>
+<status status="PASS" start="2026-09-14T17:16:43.904075" elapsed="0.026842"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="1" id="s1" pass="1" fail="0" skip="0">1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,28 @@
+Acceptance testing-- end-user testing(non technical)
+Acceptance test driven development(ATDD)
+approach is keydriven approach --- builtin keywords, userdefined keyword
+python/java
+https://robotframework.org/
+
+
+Architechture
+_____________
+robot framework --> selenium+builtin
+python selenium
+browser
+webdriver
+
+Disadvantage:
+------------
+peformance testing
+lines of code ---increase based on logic/enhancement
+no complex test cases
+
+
+##### installation
+pycharm
+python
+robotframework
+
+
+

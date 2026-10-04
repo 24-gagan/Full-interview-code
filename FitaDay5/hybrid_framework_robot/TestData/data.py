@@ -1,0 +1,5 @@
+url="https://www.saucedemo.com/"
+browser="chrome"
+timeout=5
+username="standard_user"
+password="secret_sauce"
